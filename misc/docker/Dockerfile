@@ -29,7 +29,6 @@ COPY --from=g /src/scheduler /
 COPY --from=n /src/static /static
 COPY --from=n /etc/passwd /etc/passwd
 
-USER nobody
 STOPSIGNAL SIGINT
 EXPOSE 8080
 
